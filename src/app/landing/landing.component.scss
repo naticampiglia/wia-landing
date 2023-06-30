@@ -21,6 +21,23 @@
     width: auto;
   }
 }
+
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  opacity: 0.4;
+  position: absolute;
+  right: -3rem;
+  z-index: -1;
+  top: -20px;
+  width: auto;
+  img {
+    height: calc(100vh - 312px) !important;
+    width: auto !important;
+  }
+}
 @keyframes moveinright {
   0% {
     opacity: 0;
