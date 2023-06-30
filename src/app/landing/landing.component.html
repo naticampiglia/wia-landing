@@ -1,199 +1,93 @@
-<div class="relative overflow-hidden flex flex-column justify-content-center">
-  <!-- <div class="bg-circle opacity-50" style="top: -200px; left: -700px"></div>
-  <div class="bg-circle hidden lg:flex" style="top: 50px; right: -800px; transform: rotate(60deg)"></div> -->
-  <div class="landing-wrapper">
-    <!-- <div
-      class="flex align-items-center justify-content-between relative lg:static py-6 px-4 mx-0 md:px-7 lg:px-8 lg:py-6 lg:mx-8">
-      <a class="cursor-pointer wia-logo" (click)="router.navigate(['/'])">
-        <img src="https://cdn.wia.io/website/images/wia-logo-dark.svg" alt="Wia" />
-      </a>
-      <a
-        pRipple
-        class="cursor-pointer block md:hidden text-700 text-primary"
-        pStyleClass="@next"
-        enterClass="ng-hidden"
-        enterActiveClass="px-fadein"
-        leaveToClass="ng-hidden"
-        leaveActiveClass="px-fadeout"
-        [hideOnOutsideClick]="true">
-        <i class="pi pi-bars text-4xl"></i>
-      </a>
-      <ul
-        #menu
-        style="top: 80px; right: 0%"
-        class="list-none p-3 md:p-0 justify-content-end ng-hidden md:flex absolute md:static w-full md:w-6 md:px-0 z-3 shadow-2 md:shadow-none surface-card md:surface-ground">
-        <a
-          pRipple
-          class="cursor-pointer block md:hidden text-700 text-primary absolute z-5"
-          style="top: 1.5rem; right: 1.5rem"
-          pRipple
-          pStyleClass="@parent"
-          enterClass="ng-hidden"
-          enterActiveClass="px-fadein"
-          leaveToClass="ng-hidden"
-          leaveActiveClass="px-fadeout">
-          <i class="pi pi-times text-3xl"></i>
-        </a>
+<div class="landing-wrapper">
+  <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 z-2">
+    <div id="home" class="hero grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-8 md:py-8">
+      <div
+        class="hero-text col-12 md:col-7 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
+        <span class="block text-900 font-bold text-4xl">Your cloud for your things</span>
+        <span class="block text-700 text-lg">
+          The <a class="cursor-pointer text-primary" href="#">Wia IoT Cloud</a> provides companies and engineers with
+          secure infrastructure and APIs to build, connect and deploy Internet of Things solutions at scale.
+        </span>
+        <span class="block text-700 text-lg"
+          >We take care of fleet management, resource provisioning, sensor data ingestion, device integrations, process
+          automation, real-time analysis and rich visualisations - all in one place.
+        </span>
 
-        <li class="md:mt-0">
-          <a
-            (click)="router.navigate(['/landing'], { fragment: 'home' })"
-            pRipple
-            pStyleClass="@grandparent"
-            enterClass="ng-hidden"
-            enterActiveClass="px-fadein"
-            leaveToClass="ng-hidden"
-            class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
-            <span>Energy</span>
-          </a>
-        </li>
-        <li>
-          <a
-            (click)="router.navigate(['/'], { fragment: 'apps' })"
-            pRipple
-            pStyleClass="@grandparent"
-            enterClass="ng-hidden"
-            enterActiveClass="px-fadein"
-            leaveToClass="ng-hidden"
-            class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
-            <span>Product</span>
-          </a>
-        </li>
-        <li>
-          <a
-            (click)="router.navigate(['/'], { fragment: 'pricing' })"
-            pRipple
-            pStyleClass="@grandparent"
-            enterClass="ng-hidden"
-            enterActiveClass="px-fadein"
-            leaveToClass="ng-hidden"
-            class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
-            <span>Pricing</span>
-          </a>
-        </li>
-        <li>
-          <a
-            (click)="router.navigate(['/'], { fragment: 'features' })"
-            pRipple
-            pStyleClass="@grandparent"
-            enterClass="ng-hidden"
-            enterActiveClass="px-fadein"
-            leaveToClass="ng-hidden"
-            class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
-            <span>Developers</span>
-          </a>
-        </li>
-
-        <li class="flex align-items-center">
-          <a href="https://dashboard.wia.io/auth/login">
+        <div class="flex">
+          <a href="https://dashboard.wia.io/auth/signUp">
             <button
               pButton
               pRipple
               type="button"
-              pStyleClass="@grandparent"
-              enterClass="ng-hidden"
-              enterActiveClass="px-fadein"
-              leaveToClass="ng-hidden"
-              label="Log In"
-              class="m-0 mt-3 md:mt-0 md:ml-5 white-space-nowrap"></button
+              label="Start Building Now"
+              icon="pi pi-arrow-right"
+              iconPos="right"
+              class="w-14rem p-button-outlined"></button
           ></a>
-        </li>
-      </ul>
-    </div> -->
-    <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 z-2">
-      <div
-        id="home"
-        class="hero grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-8 md:py-8">
-        <div
-          class="hero-text col-12 md:col-7 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
-          <span class="block text-900 font-bold text-4xl">Your cloud for your things</span>
-          <span class="block text-700 text-lg">
-            The <a class="cursor-pointer text-primary" href="#">Wia IoT Cloud</a> provides companies and engineers with
-            secure infrastructure and APIs to build, connect and deploy Internet of Things solutions at scale.
-          </span>
-          <span class="block text-700 text-lg"
-            >We take care of fleet management, resource provisioning, sensor data ingestion, device integrations,
-            process automation, real-time analysis and rich visualisations - all in one place.
-          </span>
 
-          <div class="flex">
-            <a href="https://dashboard.wia.io/auth/signUp">
-              <button
-                pButton
-                pRipple
-                type="button"
-                label="Start Building Now"
-                icon="pi pi-arrow-right"
-                iconPos="right"
-                class="w-14rem p-button-outlined"></button
-            ></a>
-
-            <!-- pStyleClass="@grandparent"
+          <!-- pStyleClass="@grandparent"
               enterClass="ng-hidden"
               enterActiveClass="px-fadein"
               leaveToClass="ng-hidden" -->
-            <button
-              pButton
-              pRipple
-              type="button"
-              label="Speak To Us"
-              class="m-0 ml-2 md:mt-0 md:ml-5 white-space-nowrap"></button>
-          </div>
-        </div>
-
-        <div class="hero-image hidden md:flex col-12 md:col-6 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">
-          <img
-            animateEnter="moveinright"
-            src="https://cdn.wia.io/website/images/header-sub-image.png"
-            alt=""
-            class="w-full h-full border-round animation-duration-1000 animation-ease-out" />
+          <button
+            pButton
+            pRipple
+            type="button"
+            label="Speak To Us"
+            class="m-0 ml-2 md:mt-0 md:ml-5 white-space-nowrap"></button>
         </div>
       </div>
 
-      <div class="grid justify-content-between my-6 mt-8 pt-8 md:my-8">
-        <div class="col-12 md:col-2 text-center md:text-left">
-          <a class="cursor-pointer wia-logo" (click)="router.navigate(['/'])">
-            <img src="https://cdn.wia.io/website/images/wia-logo-dark.svg" alt="Wia" />
-          </a>
-        </div>
+      <div class="hero-image hidden md:flex col-12 md:col-6 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">
+        <img
+          animateEnter="moveinright"
+          src="https://cdn.wia.io/website/images/header-sub-image.png"
+          alt=""
+          class="w-full h-full border-round animation-duration-1000 animation-ease-out" />
+      </div>
+    </div>
 
-        <div class="col-12 md:col-10 lg:col-7">
-          <div class="grid text-center md:text-left">
-            <div class="col-12 md:col-3">
-              <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Company</h4>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">About Us</a>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">News</a>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Investor Relations</a>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Careers</a>
-              <a class="line-height-3 block cursor-pointer text-700">Media Kit</a>
-            </div>
+    <div class="grid justify-content-between my-6 mt-8 pt-8 md:my-8">
+      <div class="col-12 md:col-2 text-center md:text-left">
+        <a class="cursor-pointer wia-logo" (click)="router.navigate(['/'])">
+          <img src="https://cdn.wia.io/website/images/wia-logo-dark.svg" alt="Wia" />
+        </a>
+      </div>
 
-            <div class="col-12 md:col-3 mt-4 md:mt-0">
-              <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Resources</h4>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Get Started</a>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Learn</a>
-              <a class="line-height-3 block cursor-pointer text-700">Case Studies</a>
-            </div>
+      <div class="col-12 md:col-10 lg:col-7">
+        <div class="grid text-center md:text-left">
+          <div class="col-12 md:col-3">
+            <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Company</h4>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">About Us</a>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">News</a>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Investor Relations</a>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Careers</a>
+            <a class="line-height-3 block cursor-pointer text-700">Media Kit</a>
+          </div>
 
-            <div class="col-12 md:col-3 mt-4 md:mt-0">
-              <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Community</h4>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Discord</a>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Events</a>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">FAQ</a>
-              <a class="line-height-3 block cursor-pointer text-700">Blog</a>
-            </div>
+          <div class="col-12 md:col-3 mt-4 md:mt-0">
+            <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Resources</h4>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Get Started</a>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Learn</a>
+            <a class="line-height-3 block cursor-pointer text-700">Case Studies</a>
+          </div>
 
-            <div class="col-12 md:col-3 mt-4 md:mt-0">
-              <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Legal</h4>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Brand Policy</a>
-              <a class="line-height-3 block cursor-pointer mb-2 text-700">Privacy Policy</a>
-              <a class="line-height-3 block cursor-pointer text-700">Terms of Service</a>
-            </div>
+          <div class="col-12 md:col-3 mt-4 md:mt-0">
+            <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Community</h4>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Discord</a>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Events</a>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">FAQ</a>
+            <a class="line-height-3 block cursor-pointer text-700">Blog</a>
+          </div>
+
+          <div class="col-12 md:col-3 mt-4 md:mt-0">
+            <h4 class="font-medium text-xl line-height-3 mb-3 text-900">Legal</h4>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Brand Policy</a>
+            <a class="line-height-3 block cursor-pointer mb-2 text-700">Privacy Policy</a>
+            <a class="line-height-3 block cursor-pointer text-700">Terms of Service</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<app-config [minimal]="true"></app-config>
