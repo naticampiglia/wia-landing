@@ -491,6 +491,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+dist/wia-landing
 
 # Gatsby files
 .cache/
@@ -708,6 +709,11 @@ crashlytics-build.properties
 /dist
 /tmp
 /out-tsc
+dist
+dist/
+/dist/
+dist/*
+/dist/wia-landing
 
 # dependencies
 /node_modules
