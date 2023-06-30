@@ -1,8 +1,8 @@
 <div class="relative overflow-hidden flex flex-column justify-content-center">
-  <div class="bg-circle opacity-50" style="top: -200px; left: -700px"></div>
-  <div class="bg-circle hidden lg:flex" style="top: 50px; right: -800px; transform: rotate(60deg)"></div>
+  <!-- <div class="bg-circle opacity-50" style="top: -200px; left: -700px"></div>
+  <div class="bg-circle hidden lg:flex" style="top: 50px; right: -800px; transform: rotate(60deg)"></div> -->
   <div class="landing-wrapper">
-    <div
+    <!-- <div
       class="flex align-items-center justify-content-between relative lg:static py-6 px-4 mx-0 md:px-7 lg:px-8 lg:py-6 lg:mx-8">
       <a class="cursor-pointer wia-logo" (click)="router.navigate(['/'])">
         <img src="https://cdn.wia.io/website/images/wia-logo-dark.svg" alt="Wia" />
@@ -44,7 +44,7 @@
             enterActiveClass="px-fadein"
             leaveToClass="ng-hidden"
             class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
-            <span>Home</span>
+            <span>Energy</span>
           </a>
         </li>
         <li>
@@ -56,7 +56,7 @@
             enterActiveClass="px-fadein"
             leaveToClass="ng-hidden"
             class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
-            <span>Apps</span>
+            <span>Product</span>
           </a>
         </li>
         <li>
@@ -80,24 +80,26 @@
             enterActiveClass="px-fadein"
             leaveToClass="ng-hidden"
             class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
-            <span>Features</span>
+            <span>Developers</span>
           </a>
         </li>
 
         <li class="flex align-items-center">
-          <button
-            pButton
-            pRipple
-            type="button"
-            pStyleClass="@grandparent"
-            enterClass="ng-hidden"
-            enterActiveClass="px-fadein"
-            leaveToClass="ng-hidden"
-            label="Buy Now"
-            class="m-0 mt-3 md:mt-0 md:ml-5 white-space-nowrap"></button>
+          <a href="https://dashboard.wia.io/auth/login">
+            <button
+              pButton
+              pRipple
+              type="button"
+              pStyleClass="@grandparent"
+              enterClass="ng-hidden"
+              enterActiveClass="px-fadein"
+              leaveToClass="ng-hidden"
+              label="Log In"
+              class="m-0 mt-3 md:mt-0 md:ml-5 white-space-nowrap"></button
+          ></a>
         </li>
       </ul>
-    </div>
+    </div> -->
     <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 z-2">
       <div
         id="home"
@@ -115,14 +117,16 @@
           </span>
 
           <div class="flex">
-            <button
-              pButton
-              pRipple
-              type="button"
-              label="Start Building Now"
-              icon="pi pi-arrow-right"
-              iconPos="right"
-              class="w-14rem p-button-outlined"></button>
+            <a href="https://dashboard.wia.io/auth/signUp">
+              <button
+                pButton
+                pRipple
+                type="button"
+                label="Start Building Now"
+                icon="pi pi-arrow-right"
+                iconPos="right"
+                class="w-14rem p-button-outlined"></button
+            ></a>
 
             <!-- pStyleClass="@grandparent"
               enterClass="ng-hidden"
